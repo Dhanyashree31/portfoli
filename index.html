@@ -38,7 +38,6 @@
       text-align: center;
       padding: 20px;
     }
-    /* Navbar styling */
     .navbar {
       background-color: #182848;
     }
@@ -107,13 +106,56 @@
   <!-- Career & Projects -->
   <section id="projects">
     <h2>Career & Projects</h2>
-    <ul>
-      <li>Solar Energy Optimization</li>
-      <li>Healthcare Diagnostics Dashboard</li>
-      <li>Fraud Detection System</li>
-      <li>Automotive Performance Analysis</li>
-      <li>Automation Tools with GUI, REST APIs, HTML Parsing</li>
-    </ul>
+    <div class="accordion" id="projectAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="proj1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProj1">
+            Solar Energy Optimization
+          </button>
+        </h2>
+        <div id="collapseProj1" class="accordion-collapse collapse" data-bs-parent="#projectAccordion">
+          <div class="accordion-body">
+            Designed an AI model to optimize solar panel efficiency using predictive analytics and weather data.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="proj2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProj2">
+            Healthcare Diagnostics Dashboard
+          </button>
+        </h2>
+        <div id="collapseProj2" class="accordion-collapse collapse" data-bs-parent="#projectAccordion">
+          <div class="accordion-body">
+            Built a Streamlit dashboard for patient data visualization and predictive healthcare diagnostics.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="proj3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProj3">
+            Fraud Detection System
+          </button>
+        </h2>
+        <div id="collapseProj3" class="accordion-collapse collapse" data-bs-parent="#projectAccordion">
+          <div class="accordion-body">
+            Developed a machine learning model to detect fraudulent transactions with high accuracy.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="proj4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProj4">
+            Automotive Performance Analysis
+          </button>
+        </h2>
+        <div id="collapseProj4" class="accordion-collapse collapse" data-bs-parent="#projectAccordion">
+          <div class="accordion-body">
+            Created predictive models to analyze and improve automotive performance metrics.
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Resume -->
