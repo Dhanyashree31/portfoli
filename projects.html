@@ -1,124 +1,66 @@
 <section class="container mt-5">
   <h2>Projects</h2>
-  <div class="row">
+  <div class="accordion" id="projectsAccordion">
 
     <!-- Project 1 -->
-    <div class="col-md-6 mb-4">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">Solar Energy Optimization</h5>
-          <p class="card-text">AI model to optimize solar panel efficiency.</p>
-          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectOneModal">
-            View Details
-          </button>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projectOne" aria-expanded="false" aria-controls="projectOne">
+          Solar Energy Optimization
+        </button>
+      </h2>
+      <div id="projectOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#projectsAccordion">
+        <div class="accordion-body">
+          Designed an AI model to optimize solar panel efficiency using predictive analytics and weather data. 
+          Improved energy output by simulating real-world conditions and applying machine learning algorithms.
         </div>
       </div>
     </div>
 
     <!-- Project 2 -->
-    <div class="col-md-6 mb-4">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">Healthcare Diagnostics Dashboard</h5>
-          <p class="card-text">Streamlit dashboard for patient data visualization.</p>
-          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectTwoModal">
-            View Details
-          </button>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projectTwo" aria-expanded="false" aria-controls="projectTwo">
+          Healthcare Diagnostics Dashboard
+        </button>
+      </h2>
+      <div id="projectTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#projectsAccordion">
+        <div class="accordion-body">
+          Built a Streamlit dashboard for patient data visualization and predictive healthcare diagnostics. 
+          Integrated machine learning models to assist doctors in identifying potential health risks early.
         </div>
       </div>
     </div>
 
     <!-- Project 3 -->
-    <div class="col-md-6 mb-4">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">Fraud Detection System</h5>
-          <p class="card-text">ML model to detect fraudulent transactions.</p>
-          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectThreeModal">
-            View Details
-          </button>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projectThree" aria-expanded="false" aria-controls="projectThree">
+          Fraud Detection System
+        </button>
+      </h2>
+      <div id="projectThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#projectsAccordion">
+        <div class="accordion-body">
+          Developed a machine learning model to detect fraudulent transactions with high accuracy. 
+          Implemented anomaly detection techniques and deployed a prototype for financial institutions.
         </div>
       </div>
     </div>
 
     <!-- Project 4 -->
-    <div class="col-md-6 mb-4">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">Automotive Performance Analysis</h5>
-          <p class="card-text">Predictive models for automotive performance.</p>
-          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectFourModal">
-            View Details
-          </button>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projectFour" aria-expanded="false" aria-controls="projectFour">
+          Automotive Performance Analysis
+        </button>
+      </h2>
+      <div id="projectFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#projectsAccordion">
+        <div class="accordion-body">
+          Created predictive models to analyze and improve automotive performance metrics. 
+          Provided actionable insights for engineers to enhance fuel efficiency and reduce maintenance costs.
         </div>
       </div>
     </div>
 
   </div>
 </section>
-
-<!-- Modals -->
-
-<!-- Project 1 Modal -->
-<div class="modal fade" id="projectOneModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Solar Energy Optimization</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p>Designed an AI model to optimize solar panel efficiency using predictive analytics and weather data. Improved energy output by simulating real-world conditions and applying machine learning algorithms.</p>
-        <img src="solar_project.jpg" class="img-fluid rounded" alt="Solar Project Screenshot">
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Project 2 Modal -->
-<div class="modal fade" id="projectTwoModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Healthcare Diagnostics Dashboard</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p>Built a Streamlit dashboard for patient data visualization and predictive healthcare diagnostics. Integrated ML models to assist doctors in identifying potential health risks early.</p>
-        <img src="healthcare_dashboard.jpg" class="img-fluid rounded" alt="Healthcare Dashboard Screenshot">
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Project 3 Modal -->
-<div class="modal fade" id="projectThreeModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Fraud Detection System</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p>Developed a machine learning model to detect fraudulent transactions with high accuracy. Implemented anomaly detection techniques and deployed a prototype for financial institutions.</p>
-        <img src="fraud_detection.jpg" class="img-fluid rounded" alt="Fraud Detection Screenshot">
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Project 4 Modal -->
-<div class="modal fade" id="projectFourModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Automotive Performance Analysis</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p>Created predictive models to analyze and improve automotive performance metrics. Provided actionable insights for engineers to enhance fuel efficiency and reduce maintenance costs.</p>
-        <img src="automotive_analysis.jpg" class="img-fluid rounded" alt="Automotive Analysis Screenshot">
-      </div>
-    </div>
-  </div>
-</div>
