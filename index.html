@@ -6,29 +6,68 @@
   <title>Dhanya | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body { font-family: 'Open Sans', Arial, sans-serif; background: #f9f9f9; }
-    header { background: linear-gradient(90deg, #4b6cb7, #182848); color: white; padding: 60px 20px; text-align: center; }
-    header img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid white; margin-bottom: 15px; }
-    footer { background: #182848; color: white; text-align: center; padding: 20px; }
-    .navbar { background-color: #182848; }
-    .navbar a { color: white !important; font-weight: 500; }
-    .navbar a:hover { color: #4b6cb7 !important; }
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      background: #f9f9f9;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(90deg, #4b6cb7, #182848);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    h2 {
+      color: #182848;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .resume-btn {
+      background: #4b6cb7;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    footer {
+      background: #182848;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar {
+      background-color: #182848;
+    }
+    .navbar a {
+      color: white !important;
+      font-weight: 500;
+    }
+    .navbar a:hover {
+      color: #4b6cb7 !important;
+    }
   </style>
 </head>
 <body>
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="index.html">Dhanya</a>
-      <div class="collapse navbar-collapse">
+      <a class="navbar-brand text-white" href="#about">Dhanya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -36,15 +75,108 @@
 
   <!-- Header -->
   <header>
-    <img src="myphoto.jpg" alt="Dhanya Photo">
-    <h1>Dhanya shree Cm</h1>
+    <h1>Dhanya</h1>
     <p>AI & Computer Science Engineer | Machine Learning Specialist</p>
   </header>
 
-  <!-- About Section -->
-  <section class="container mt-5">
+  <!-- About Me -->
+  <section id="about">
     <h2>About Me</h2>
     <p>I am an Artificial Intelligence & Computer Science Engineering student at Vidyavardhaka College of Engineering. Passionate about building scalable AI solutions in healthcare, automotive, and energy optimization.</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>B.E. in Artificial Intelligence & Computer Science Engineering</strong><br>
+    Vidyavardhaka College of Engineering</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, Machine Learning, Deep Learning (CNNs, LSTMs)</li>
+      <li>Natural Language Processing, Computer Vision</li>
+      <li>Dashboard Design & Deployment (Streamlit, GitHub Pages)</li>
+      <li>Data Preprocessing & Synthetic Data Generation</li>
+    </ul>
+  </section>
+
+  <!-- Career & Projects -->
+  <section id="projects">
+    <h2>Career & Projects</h2>
+    <div class="accordion" id="projectAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="proj1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProj1">
+            Solar Energy Optimization
+          </button>
+        </h2>
+        <div id="collapseProj1" class="accordion-collapse collapse" data-bs-parent="#projectAccordion">
+          <div class="accordion-body">
+            Designed an AI model to optimize solar panel efficiency using predictive analytics and weather data.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="proj2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProj2">
+            Healthcare Diagnostics Dashboard
+          </button>
+        </h2>
+        <div id="collapseProj2" class="accordion-collapse collapse" data-bs-parent="#projectAccordion">
+          <div class="accordion-body">
+            Built a Streamlit dashboard for patient data visualization and predictive healthcare diagnostics.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="proj3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProj3">
+            Fraud Detection System
+          </button>
+        </h2>
+        <div id="collapseProj3" class="accordion-collapse collapse" data-bs-parent="#projectAccordion">
+          <div class="accordion-body">
+            Developed a machine learning model to detect fraudulent transactions with high accuracy.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="proj4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProj4">
+            Automotive Performance Analysis
+          </button>
+        </h2>
+        <div id="collapseProj4" class="accordion-collapse collapse" data-bs-parent="#projectAccordion">
+          <div class="accordion-body">
+            Created predictive models to analyze and improve automotive performance metrics.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Download my resume here:</p>
+    <a href="resume.pdf" class="resume-btn" target="_blank">Download Resume</a>
+  </section>
+
+  <!-- Hobbies -->
+  <section id="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <p>Exploring AI applications, designing dashboards, expanding datasets, and creating recruiter-ready projects. Outside of tech, I enjoy reading and visual storytelling.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: dhanyaswathi31st2004@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/dhanya-shree-c-m" target="_blank">linkedin.com/in/dhanya-shree-c-m</a></p>
+    <p>GitHub: <a href="https://github.com/dhanyashree-31" target="_blank">github.com/dhanyashree-31</a></p>
   </section>
 
   <!-- Footer -->
@@ -52,5 +184,6 @@
     <p>© 2026 Dhanya | Portfolio Website</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
